@@ -1,0 +1,148 @@
+@import url('https://fonts.cdnfonts.com/css/extraction-brk');
+
+  html {
+    scroll-behavior: smooth;
+}
+
+                
+    body {
+      font-family: 'Extraction Brk', sans-serif;
+      background-image: linear-gradient(to bottom, #000000, #230a0f, #3b0b15, #550616, #6f0012, #6f0012, #6f0012, #6f0012, #550616, #3b0b15, #230a0f, #000000); 
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #1f1f1f;
+      padding: 20px;
+    }
+    header a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    .profile {
+      text-align: center;
+      padding: 40px 20px 20px;
+      
+    }
+    .profile img {
+      width: 300px;
+      height: 200px;
+      border-radius: 5px;
+      border: 3px solid #00bcd4;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+    }
+    .profile h1 {
+      font-size: 2.5em;
+      margin-top: 15px;
+    }
+    section {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav {
+      background-color: rgba(6, 8, 10, 0.8); 
+      padding: 10px;
+      text-align: center;
+      border-radius: 50px; 
+      box-shadow: 0 0 15px #ffffff;
+      width: 50%; 
+      margin: 10px auto; 
+      position: fixed; 
+      top: 10px; 
+      z-index: 1000; 
+      backdrop-filter: blur(10000px); 
+      transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+      opacity: 89%;
+      display: flex; /* Makes the links align in one row */
+      justify-content: center; /* Centers the links horizontally */
+      gap: 20px; /* Adds spacing between the links */
+      
+    }
+    nav:hover {
+      transform: scale(1.05); 
+      
+    }
+  
+    nav.scrolled {
+      background-color: rgba(6, 8, 10, 0.8); /* Slightly darker when scrolled */
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Enhanced shadow when scrolled */
+    }
+  
+    nav img {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 15px;
+      border-radius: 50%; /* Makes the logo circular */
+    }
+  
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0;
+      display: inline-block;
+      font-weight: bold;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      nav a {
+        margin: 10px 0;
+      }
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    /* Navbar links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Links - change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .navma {
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .navma:hover {
+      transform: scale(1.2);
+      text-shadow: 1px 1px 2px black, 0 0 25px rgb(242, 242, 247), 0 0 5px darkblue;
+    }
